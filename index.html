@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario "Taller de entrevistas"</title>
+</head>
+<body>
+    <div class="color1">
+        <h1>Gracias por estar aquí y ayudarnos a preparar para un mejor futuro a nuestros chicos de la Cohorte</h1>
+    <h2>En este formulario podras registrar su avance calibrado con una rubrica que encontraras más abajo, tambien podras agregar comentarios extra si lo crees necesario.</h2>
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Calificación </th>
+                <th scope="col">4: Avanzado</th>
+                <th scope="col">3: Competente</th>
+                <th scope="col">2: En desarrollo</th>
+                <th scope="col">1: Principio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>-Demuestra un entendimiento total de las habilidades técnicas enseñadas.
+                   <br> -Durante los casos prácticos, crea un producto ejemplar.</td>
+                <td>
+                    -Demuestra un entendimiento total de las habilidades técnicas enseñadas.
+                    <br> -Durante los casos prácticos, crea un producto de alta calidad y a tiempo.
+                    </td>
+                <td>-Demuestra un entendimiento general de algunas habilidades técnicas enseñadas.
+                  <br>  -Durante los casos prácticos, crea un producto básico o que no incluye todos los requisitos.</td>
+                <td>-No demuestra un entendimiento de las habilidades técnicas enseñadas.
+                 <br>   -Durante los casos prácticos, no crea o no termina un producto.</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="mb-3 cali">
+        <form class="formulario" id="formulario" name="formulario" action="https://script.google.com/macros/s/AKfycbyxppUThWfqmlV85u-UVR1T-O8hPJ-UUITi4WfNS9JRa93_XUtvkP1dT37dc0Qjq0SV/exec" method="POST" enctype="multipart/form-data" style="background-color: #68a6DD;border-radius: 20px;">
+          <!-- Grupo: Nombre -->
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label" required>Nombre del participante</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Nombre del participante" id="nombre" required>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+        </div>
+            <div class="formulario__grupo" id="grupo__nombre" >
+                <label for="nombre" class="formulario__label">Nombre del entrevistador</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Nombre del entrevistador" id="nombre" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Cohorte
+                </label>
+                <select class="formulario__input" name="Cohorte" id="nombre" required>
+                    <option value="29">29</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">Número de taller de entrevistas
+                </label>
+                <select class="formulario__input" name="Número de taller de entrevistas" id="nombre" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">Git y GitHub
+                </label>
+                <select class="formulario__input" name="Git y GitHub" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">SCRUM
+                </label>
+                <select class="formulario__input" name="SCRUM" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">HTML
+                </label>
+                <select class="formulario__input" name="HTML" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">CSS
+                </label>
+                <select class="formulario__input" name="CSS" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">Bootstrap
+                </label>
+                <select class="formulario__input" name="Bootstrap" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">Javascript
+                </label>
+                <select class="formulario__input" name="Javascript" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">Java Springboot
+                </label>
+                <select class="formulario__input" name="JavaSpringboot" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">Java
+                </label>
+                <select class="formulario__input" name="Java" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="formulario__grupo"  id="grupo__nombre">
+                <label for="select" class="formulario__label">MySQL
+                </label>
+                <select class="formulario__input" name="MySQL" id="nombre" required>
+                    <option value="N/A">N/A</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Comentarios Extra</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Comentarios Extra" id="nombre" >
+                </div>
+            </div>
+            <div class="formulario__grupo ">
+                <p class="formulario__grupo-btn-enviar">
+                    <input type="submit" class="formulario__btn" name="Upload" value="Enviar" /></p> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
