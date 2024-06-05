@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="./invitacionstyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo">Mi Primera Boda</h1>
+    </header>
+    <nav class="nav">
+        <a href="#Informacion">
+            <li>Info</li>
+        </a>
+        <a href="#regalos">
+            <li>Lista de Regalos</li>
+        </a>
+    </nav>
+    <div class="invitation-card">
+        <h1 class="invitation-title">¡Estás Invitado!</h1>
+        <p class="invitation-details">Te invitamos a nuestra fiesta especial el próximo sábado a las 7:00 PM.</p>
+        <p class="invitation-footer">¡Esperamos verte allí!</p>
+    </div>
+    <div class="event-details">
+        <h1>MI BODA</h1>
+        <h2>29 de Febrero, 7 PM</h2>
+        <h3>JUANA & JUAN</h3>
+        <h4>Acapulco, Gro</h4>
+        <h5>No olvides traer regalo</h5>
+        <h6>Dress Code: Lino</h6>
+        <p>La mejor boda del año</p>
+    </div>
+    <div id="regalos">
+        <h1>Lista de Regalos</h1>
+        <ol>
+            <li><a href="https://a.co/d/8sutBly">Licuadora</a></li>
+            <li><a href="https://a.co/d/6V5KXkq">Terreno</a></li>
+            <li><a href="https://a.co/d/fVXSUB7">Toppers</a></li>
+            <li><a href="https://a.co/d/aF4hHn1">Cafetera</a></li>
+            <li><a href="https://a.co/d/9LBkGTG">Batidora</a></li>
+        </ol>
+    </div>
+    <div class="media">
+        <img src="./fotos boda/boda+acapulco.jpg" alt="Foto de boda en Acapulco" class="wedding-photo">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.2413431771274!2d-99.91652692542709!3d16.863951717674425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85caf93ae84c97b9%3A0x4f5dc48137cdf12c!2sProducciones%20Karamba!5e0!3m2!1ses-419!2smx!4v1715972371382!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uUlwUw6qgXA?si=whqsW6dYabi7hdvW"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+<br>
+    <div class="container">
+        <button id="toggleButton">Ocultar Texto</button>
+        <p id="textToHide">Este es el texto que se puede ocultar y mostrar.</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const toggleButton = document.getElementById('toggleButton');
+                const textToHide = document.getElementById('textToHide');
+
+                toggleButton.addEventListener('click', function () {
+                    if (textToHide.style.display === 'none') {
+                        textToHide.style.display = 'block';
+                        toggleButton.textContent = 'Ocultar Texto';
+                    } else {
+                        textToHide.style.display = 'none';
+                        toggleButton.textContent = 'Mostrar Texto';
+                    }
+                });
+            });
+
+    </script>
+    <footer>
+        <h4>Esta página fue creada por Karina Romans</h4>
+    </footer>
+</body>
+
+</html>
