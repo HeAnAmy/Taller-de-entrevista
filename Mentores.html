@@ -9,24 +9,29 @@
     <title>Formulario "Taller de entrevistas"</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd; color: blanchedalmond;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="./img/1.png" alt="" width="150px" height="150px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="Instructores.html">Formulario para instructoxs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Mentores.html">Formulario para mentoras</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg " style="padding: 10px 80px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./img/1.png" alt="" width="100px" height="100px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4>Especialista Soporte IT (Redes)</h4>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Instructores.html"><img
+                  src="https://cdn-icons-png.flaticon.com/512/3410/3410150.png" alt="instructor" width="50px" height="50px">
+                Formulario para instructoxs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Mentores.html"><img src="https://cdn-icons-png.flaticon.com/512/3052/3052594.png"
+                  alt="mentora" width="50px" height="50px"> Formulario para mentoras</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     <div class="table-responsive ">
         <table class="table table-bordered border-info">
             <thead>
@@ -58,59 +63,52 @@
           </table>
     </div>
     <div class="mb-3 cali">
-        <form class="formulario" id="formulario" name="formulario" action="https://script.google.com/macros/s/AKfycbwYn_aG6k-QwgCFnKQSe7QtWWzi6o3SKTM1UQdylnuQk3ghdVl15u72tB4_InlDDLxsqA/exec" method="POST" enctype="multipart/form-data" style="background-color: #42D6C0;border-radius: 20px;">
-          <!-- Grupo: Nombre -->
-          <div class="formulario__grupo"  id="grupo__nombre">
-            <label for="select" class="formulario__label">Nombre del participante
-            </label>
-            <select class="formulario__input" name="Nombre del participante" id="nombre" required>
-            <option value="Jesús Riverol">Jesús Riverol</option>
-            <option value="Diana Zapoteco">Diana Zapoteco</option>
-            <option value="Arely Itzel Aparicio Soberanes">Arely Itzel Aparicio Soberanes</option>
-            <option value="Melanie Diana Canales Ramírez">Melanie Diana Canales Ramírez</option>
-            <option value="Alexia Mata">Alexia Mata</option>
-            <option value="Brian Ocegueda">Brian Ocegueda</option>
-            <option value="Daniel Martinez D">Daniel Martinez D</option>
-            <option value="José Salazar">José Salazar</option>
-            <option value="Fernando Gibran">Fernando Gibran</option>
-            <option value="Ana Paulina Hurtado Miguel">Ana Paulina Hurtado Miguel</option>
-            <option value="Claudia Angélica Rosas Alvarez">Claudia Angélica Rosas Alvarez</option>
-            <option value="Ingrid Archundia">Ingrid Archundia</option>
-            <option value="Luisa Sofia Suárez Villanueva">Luisa Sofia Suárez Villanueva</option>
-            <option value="Luis Alberto Maldonado">Luis Alberto Maldonado</option>
-            <option value="Luis Leobardo García Mejía">Luis Leobardo García Mejía</option>
-            </select>
+      <h4 style="text-align: center;">Mentoria</h4>
+        <form class="formulario" id="formulario" name="formulario" action="https://script.google.com/macros/s/AKfycbwYn_aG6k-QwgCFnKQSe7QtWWzi6o3SKTM1UQdylnuQk3ghdVl15u72tB4_InlDDLxsqA/exec" method="POST" enctype="multipart/form-data" style="border-radius: 20px;">
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="select" class="formulario__label">Nombre del participante
+          </label>
+          <select class="formulario__input" name="Nombre del participante" id="nombre" required>
+            <option value="Alfredo Guerrero Lerma">Alfredo Guerrero Lerma</option>
+            <option value="Georgina Cervantes Castro">Georgina Cervantes Castro</option>
+            <option value="Giovanni Adair Avilés García">Giovanni Adair Avilés García</option>
+            <option value="Guadalupe Cortes Bustamante">Guadalupe Cortes Bustamante</option>
+            <option value="Jafeth Aaron Garcia Salamanca">Jafeth Aaron Garcia Salamanca</option>
+            <option value="Luis Adrian Rodiguez Diaz">Luis Adrian Rodiguez Diaz</option>
+            <option value="Luis Fernando Rubio Guzman">Luis Fernando Rubio Guzman</option>
+            <option value="Maria Fernanda Chiguer Montes">Maria Fernanda Chiguer Montes</option>
+            <option value="Miriam Hilaria Almanza de la Fuente">Miriam Hilaria Almanza de la Fuente</option>
+            <option value="Pedro Angel Rivera Herrera">Pedro Angel Rivera Herrera</option>
+            <option value="Rodrigo Velazquez Cabello">Rodrigo Velazquez Cabello</option>
+            <option value="Sandra Carolina Jimenez Pedroza">Sandra Carolina Jimenez Pedroza</option>
+            <option value="Sebastián Josafat García Arreola">Sebastián Josafat García Arreola</option>
+            <option value="Silvia Angélica Alatorre Camberos">Silvia Angélica Alatorre Camberos</option>
+            <option value="Vanessa Segundo Sandoval">Vanessa Segundo Sandoval</option>
+            <option value="Veronica Fabiola Gomez Procuna">Veronica Fabiola Gomez Procuna</option>
+            <option value="Zair Cordero Velasco">Zair Cordero Velasco</option>
+          </select>
         </div>
-        <div class="formulario__grupo"  id="grupo__nombre">
-            <label for="select" class="formulario__label">Nombre del entrevistador
-            </label>
-            <select class="formulario__input" name="Nombre del entrevistador" id="nombre" required>
-                <option value="Tadeo">Tadeo</option>
-                <option value="Nancy">Nancy Moreno</option>
-                <option value="Sergio">Sergio Torres</option>
-                <option value="JC">JC</option>
-                <option value="Amy">Amy</option>
-                <option value="Sahary">Sahary</option>
-            </select>
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="select" class="formulario__label">Nombre del entrevistador
+          </label>
+          <select class="formulario__input" name="Nombre del entrevistador" id="nombre" required>
+            <option value="Adriana Espinosa">Adriana Espinosa</option>
+            <option value="Amizaday Hernández">Amizaday Hernández</option>
+            <option value="Carlos Hinojosa">Carlos Hinojosa</option>
+            <option value="Eva Alvarádo">Eva Alvarádo</option>
+            <option value="Josue Cano">Josue Cano</option>
+            <option value="Maara Lomelí">Maara Lomelí</option>
+            <option value="Magaly Vega">Magaly Vega</option>
+            <option value="Monse Silva">Monse Silva</option>
+            <option value="Nancy Moreno">Nancy Moreno</option>
+          </select>
         </div>
             <div class="formulario__grupo" id="grupo__nombre">
-                <label for="select" class="formulario__label">Cohorte
-                </label>
-                <select class="formulario__input" name="Cohorte" id="nombre" required>
-                    <option value="29">29</option>
-                    <option value="33">33</option>
-                    <option value="37">37</option>
-                    <option value="41">41</option>
-                </select>
-            </div>
-            <div class="formulario__grupo"  id="grupo__nombre">
-                <label for="select" class="formulario__label">Número de taller de entrevistas
-                </label>
-                <select class="formulario__input" name="Número de taller de entrevistas" id="nombre" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
+              <label for="select" class="formulario__label">Cohorte
+              </label>
+              <select class="formulario__input" name="Cohorte" id="nombre" required>
+                <option value="1">CH 1</option>
+              </select>
             </div>
             <div class="formulario__grupo"  id="grupo__nombre">
                 <label for="select" class="formulario__label">Identifica sus fortalezas y areas de oportunidad
@@ -171,7 +169,7 @@
             </div>
 
             <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label">Comentarios Extra</label>
+                <label for="nombre" class="formulario__label">Retroalimentación</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="Comentarios Extra" id="nombre" >
                 </div>

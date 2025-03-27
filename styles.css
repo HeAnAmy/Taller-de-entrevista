@@ -1,175 +1,122 @@
-
-.navbar{
-   
-    background-color: #d6d1f5;
-    align-items: center;
+/* Fuente futurista */
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #0a192f;
+  color: #ffffff;
+  margin: 0; 
+  padding: 0;
 }
 
-.logo img{
-    height: 40px;
-    width:75px;
-    margin-right: 20px;
-    }
-
-    .logo{
-        display: flex;
-        align-items: center;
-        margin-right: 40px;
-    }
-    nav a:hover{
-        background-color: palevioletred;
-        padding: 3px;
-        border-radius: 20px;
-        margin: 1px;
-    }
-    nav a{
-        text-decoration: none;
-        color: #a535aa;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 10pt;
-    }
-    .rrss{
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-    }
-    
-    .rrss img{
-        height: 40px;
-        width: 40px;
-        margin: 10px
-    }
-
-    .article{
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        flex-direction: column;
-        font-style: oblique;
-        color:#d6d1f5
-    }
-    
-    .encabezado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    flex-direction: column;
-    font-style: oblique;
-    color:#d6d1f5
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1a2a6c, #4fc3f7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-
-.encabezado img{
-width: 500px;
-height: 300px;
-border-top-right-radius: 24px;
-border-bottom-left-radius: 24px;
+.navbar-brand img {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
 }
 
-    .article img{
-    display: inliblock;
-    width: 500px;
-    height: 300px;
-    border-top-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    }
-    
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: right;
+}
 
-    .sidebar{
-        height: auto;
-        background-color: #d6d1f5;
-    }
+.navbar-nav .nav-link:hover {
+  color: #4fc3f7 !important;
+}
 
-    .sidebar ul{
-        margin-top: 2px;
-    }
+/* Tabla */
+.table {
+  background-color: #4fc3f7;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-    .section {
-        display: flex;
-        flex-direction:row;
-        gap: 10px;
-        margin: 50px;
-        justify-content:space-between; /*Esto sirve para separar las tarjetas*/
-        align-items: center;
-       
-      }
- 
-    .card1 {
-        width: 300px;
-        height: 500px;
-        padding: 20px;
-        background-color:#F176AF;
-        text-align: center;
-        font-style: bold;
-        border-radius: 30px;
-         border-style:inherit;
-      }
+.table thead {
+  background-color: #1a2a6c;
+  color: #4fc3f7;
+  text-transform: uppercase;
+}
 
-    .card1 p {
-        text-align:justify;
-        width: 250px;
-        padding-left: 25px;
-        width: 300px;
-        height: 500px;
-        padding: 20px;
-        text-align: center;
-        border-radius: 10px;
-        border-style:inherit;
-        font-style:oblique;
-        border-radius: 30px;
-        text-shadow: 10px;
-      }
+.table tbody tr {
+  transition: 0.3s;
+}
 
-      button {
-        background:radial-gradient(50px,rgb(245, 155, 241),rgb(236, 195, 240)); /*para poner en gradiante cualquier cosa, en este caso el botón*/
-        color: rgb(77, 11, 63);
-        border: none;
-        padding: 30px;
-        border-radius: 10px;}
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-      .card2 {
-        width: 300px;
-        height: 500px;
-        padding: 20px;
-        background-color:#F176AF;
-        text-align: center;
-        font-style: bold;
-        border-radius: 30px;
-         border-style:inherit;
-      }
+/* Formulario */
+.formulario {
+  background: rgba(10, 25, 47, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #4fc3f7;
+  max-width: 100%;
+  /* Asegura que el formulario ocupe todo el ancho */
+}
 
-      .card2 p {
-        text-align:justify;
-        width: 250px;
-        padding-left: 25px;
-      }
+.formulario__label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4fc3f7;
+}
 
-.card3 {
-        width: 300px;
-        height: 500px;
-        padding: 20px;
-        background-color: #F176AF;
-        text-align: center;
-        font-style: bold;
-        border-radius: 30px;
-         border-style:inherit;
-        /*float:right sirve para posicionar una imagen de lado */
-      }
+.formulario__input {
+  width: 100%;
+  padding: 12px;
+  /* Ajuste para mayor comodidad */
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.3s;
+}
 
-      .card3 p {
-        text-align:justify;
-        width: 250px;
-        padding-left: 25px;
-      }
+.formulario__input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  box-shadow: 0px 0px 15px #4fc3f7;
+  animation: neonGlow 1.5s infinite alternate;
+  /* Mantener la animación */
+}
 
-      .footer{    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 300px;
-        background-color: #110d2d;
-        align-items: center;
-        color: azure;
-    }
-  
+/* Botón de enviar */
+.formulario__btn {
+  background: linear-gradient(90deg, #1a2a6c, #4fc3f7);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.formulario__btn:hover {
+  background: linear-gradient(90deg, #4fc3f7, #1a2a6c);
+  box-shadow: 0px 0px 15px #4fc3f7;
+}
+
+/* Animaciones */
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 5px #4fc3f7;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #4fc3f7;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #4fc3f7;
+  }
+}
