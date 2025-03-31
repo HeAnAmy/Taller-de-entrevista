@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Soporte IT</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Ticket</h2>
+        <form id="formulario" name="formulario" action="https://script.google.com/macros/s/AKfycbyFbS09h-xZO1TE9_n5ebF1DrvPmR7dOppiBxgPMbgFrOhUAThN0SliP6Za_X5T3HWq/exec" method="POST"
+            class="p-4 border rounded">
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Especialista que atendio
+                </label>
+                <select class="formulario__input" name="Nombre del participante" id="nombre" required>
+                    <option value="Alfredo Guerrero Lerma">Alfredo Guerrero Lerma</option>
+                    <option value="Georgina Cervantes Castro">Georgina Cervantes Castro</option>
+                    <option value="Giovanni Adair Avilés García">Giovanni Adair Avilés García</option>
+                    <option value="Guadalupe Cortes Bustamante">Guadalupe Cortes Bustamante</option>
+                    <option value="Jafeth Aaron Garcia Salamanca">Jafeth Aaron Garcia Salamanca</option>
+                    <option value="Luis Adrian Rodiguez Diaz">Luis Adrian Rodiguez Diaz</option>
+                    <option value="Luis Fernando Rubio Guzman">Luis Fernando Rubio Guzman</option>
+                    <option value="Maria Fernanda Chiguer Montes">Maria Fernanda Chiguer Montes</option>
+                    <option value="Miriam Hilaria Almanza de la Fuente">Miriam Hilaria Almanza de la Fuente</option>
+                    <option value="Pedro Angel Rivera Herrera">Pedro Angel Rivera Herrera</option>
+                    <option value="Rodrigo Velazquez Cabello">Rodrigo Velazquez Cabello</option>
+                    <option value="Sandra Carolina Jimenez Pedroza">Sandra Carolina Jimenez Pedroza</option>
+                    <option value="Sebastián Josafat García Arreola">Sebastián Josafat García Arreola</option>
+                    <option value="Silvia Angélica Alatorre Camberos">Silvia Angélica Alatorre Camberos</option>
+                    <option value="Vanessa Segundo Sandoval">Vanessa Segundo Sandoval</option>
+                    <option value="Veronica Fabiola Gomez Procuna">Veronica Fabiola Gomez Procuna</option>
+                    <option value="Zair Cordero Velasco">Zair Cordero Velasco</option>
+                </select>
+            </div>
+            <br>
+            <h6 class="mb-3">1. Información del Usuario</h6>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="Nombre" id="nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" name="Correo Electrónico" id="correo" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono / Extensión</label>
+                    <input type="text" class="form-control" name="Teléfono / Extensión" id="telefono" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="departamento" class="form-label">Departamento / Área</label>
+                    <input type="text" class="form-control" name="Departamento / Área" id="departamento" required>
+                </div>
+            </div>
+
+            <h6 class="mb-3">2. Información del Problema</h6>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Categoría</label>
+                    <select class="form-control" name="Categoría" id="categoria" required>
+                        <option value="Hardware">Hardware</option>
+                        <option value="Software">Software</option>
+                        <option value="Redes">Redes</option>
+                        <option value="Seguridad">Seguridad</option>
+                        <option value="Otros">Otros (especificar)</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Prioridad</label>
+                    <select class="form-control" name="Prioridad" id="prioridad" required>
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Crítica">Crítica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción del Problema</label>
+                <textarea class="form-control" name="Descripción del Problema" id="descripcion" rows="3"
+                    required></textarea>
+            </div>
+
+            <h6 class="mb-3">3. Diagnóstico Inicial</h6>
+            <div class="mb-3">
+                <label for="causas" class="form-label">Posibles Causas</label>
+                <textarea class="form-control" name="Posibles Causas" id="causas" rows="3"></textarea>
+            </div>
+
+            <h6 class="mb-3">4. Resolución del Ticket</h6>
+            <div class="mb-3">
+                <label for="acciones" class="form-label">Acciones Realizadas</label>
+                <textarea class="form-control" name="Acciones Realizadas" id="acciones" rows="3"></textarea>
+            </div>
+
+            <h6 class="mb-3">5. Cierre del Ticket</h6>
+            <div class="mb-3">
+                <label class="form-label">Satisfacción del Usuario</label>
+                <select class="form-control" name="Satisfacción del Usuario" id="satisfaccion">
+                    <option value="Muy Satisfecho">Muy Satisfecho</option>
+                    <option value="Satisfecho">Satisfecho</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Insatisfecho">Insatisfecho</option>
+                    <option value="Muy Insatisfecho">Muy Insatisfecho</option>
+                </select>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

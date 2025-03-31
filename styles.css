@@ -1,122 +1,128 @@
-/* Fuente futurista */
+/* Estilos generales */
 body {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  background-color: #0a192f;
-  color: #ffffff;
-  margin: 0; 
-  padding: 0;
-}
-
-/* Navbar */
-.navbar {
-  background: linear-gradient(90deg, #1a2a6c, #4fc3f7);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.navbar-brand img {
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
-}
-
-.navbar-nav .nav-link {
-  color: #fff !important;
-  font-weight: bold;
-  transition: 0.3s;
-  text-align: right;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #4fc3f7 !important;
-}
-
-/* Tabla */
-.table {
-  background-color: #4fc3f7;
-  color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.table thead {
-  background-color: #1a2a6c;
-  color: #4fc3f7;
-  text-transform: uppercase;
-}
-
-.table tbody tr {
-  transition: 0.3s;
-}
-
-.table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Formulario */
-.formulario {
-  background: rgba(10, 25, 47, 0.9);
+  font-family: 'Arial', sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #4fc3f7;
-  max-width: 100%;
-  /* Asegura que el formulario ocupe todo el ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.formulario__label {
-  font-size: 18px;
+/* Contenedor del formulario */
+.formulario {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Encabezado */
+.formulario__titulo {
+  font-size: 22px;
   font-weight: bold;
-  color: #4fc3f7;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
 }
 
-.formulario__input {
+/* Etiquetas */
+.formulario__label {
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Agrupaciones de campos */
+.formulario__grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Campos de entrada y selección */
+.formulario__input,
+.formulario__select,
+.formulario__textarea {
   width: 100%;
   padding: 12px;
-  /* Ajuste para mayor comodidad */
-  border: none;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   font-size: 16px;
-  transition: 0.3s;
+  background: #f9f9f9;
+  transition: all 0.3s ease-in-out;
 }
 
-.formulario__input:focus {
-  background: rgba(255, 255, 255, 0.2);
+.formulario__input:focus,
+.formulario__select:focus,
+.formulario__textarea:focus {
+  border-color: #007bff;
+  background: #fff;
   outline: none;
-  box-shadow: 0px 0px 15px #4fc3f7;
-  animation: neonGlow 1.5s infinite alternate;
-  /* Mantener la animación */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-/* Botón de enviar */
+/* Textarea */
+.formulario__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Estilos de los checkboxes y radios */
+.formulario__checkbox,
+.formulario__radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.formulario__checkbox input,
+.formulario__radio input {
+  accent-color: #007bff;
+  width: 18px;
+  height: 18px;
+}
+
+/* Botón */
 .formulario__btn {
-  background: linear-gradient(90deg, #1a2a6c, #4fc3f7);
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
   width: 100%;
-  transition: 0.3s;
+  background: #007bff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
 }
 
 .formulario__btn:hover {
-  background: linear-gradient(90deg, #4fc3f7, #1a2a6c);
-  box-shadow: 0px 0px 15px #4fc3f7;
+  background: #0056b3;
 }
 
-/* Animaciones */
-@keyframes neonGlow {
-  0% {
-    box-shadow: 0 0 5px #4fc3f7;
-  }
+/* Secciones separadas */
+.formulario__seccion {
+  background: #f8f9fc;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
 
-  50% {
-    box-shadow: 0 0 15px #4fc3f7;
-  }
-
-  100% {
-    box-shadow: 0 0 5px #4fc3f7;
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .formulario {
+    max-width: 100%;
+    padding: 20px;
   }
 }
