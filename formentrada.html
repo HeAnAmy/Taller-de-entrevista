@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <title>Formulario "Taller de entrevistas"</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="padding: 10px 80px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./img/1.png" alt="" width="100px" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h4>Especialista Soporte IT (Redes)</h4>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="estudiantes.html"><img
+                                src="https://cdn-icons-png.flaticon.com/512/3410/3410150.png" alt="instructor"
+                                width="50px" height="50px">Tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mb-3 cali">
+        <br>
+        <h4 style="text-align: center;">Participantes</h4>
+        <form class="formulario" id="formulario" name="formulario"
+            action="https://script.google.com/a/macros/idr.edu.mx/s/AKfycbxMxnLLoxZkg8UVhtnzFbANZ3f1zwcEEpyn6QEZQiok_DF5fzo2UKKv1MGzNX0g2X5gVQ/exec"
+            method="POST" enctype="multipart/form-data" style="border-radius: 20px;">
+            <!-- Grupo: Nombre -->
+            <h1>Información personal</h1>
+            <br>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Nombre del participante
+                </label>
+                <select class="formulario__input" name="Nombre del participante" id="nombre" required>
+                    <option value="Tania Lizbeth Córdova Acosta">Tania Lizbeth Córdova Acosta</option>
+                    <option value="Montserrat Frias Carazo">Montserrat Frias Carazo</option>
+                    <option value="Perla Valeria Ortiz Flores">Perla Valeria Ortiz Flores</option>
+                    <option value="Damian Paez Garcia">Damian Paez Garcia</option>
+                    <option value="Edwin Axel LLaguno Medina">Edwin Axel LLaguno Medina</option>
+                    <option value="Luis Angel Vázquez Lara">Luis Angel Vázquez Lara</option>
+                    <option value="Victor Hugo Amaya Mejia">Victor Hugo Amaya Mejia</option>
+                    <option value="Leslee Serna">Leslee Serna</option>
+                    <option value="Sara Ruiz Villicaña">Sara Ruiz Villicaña</option>
+                    <option value="Jose Ignacio Carmona Viniegra">Jose Ignacio Carmona Viniegra</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Correo Electrónico (El que usas en el bootcamp):</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Correo" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Número de celular:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Número de celular" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Fecha de nacimiento:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Fecha de nacimiento:" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Estado de residencia:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Estado de residencia:" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Municipio o alcaldía:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Municipio o alcaldía:" id="nombre">
+                </div>
+            </div>
+            <h1>Información académica</h1>
+            <br>
+        
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">¿Cúal es tu nivel de ingles?
+                </label>
+                <select class="formulario__input" name="¿Cúal es tu nivel de ingles?" id="nombre" required>
+                    <option value="A1: Principiante">A1: Principiante</option>
+                    <option value="A2: Elemental">A2: Elemental </option>
+                    <option value="B1: Intermedio">B1: Intermedio</option>
+                    <option value="B2: Intermedio Alto">B2: Intermedio Alto</option>
+                    <option value="C1: Avanzado">C1: Avanzado</option>
+                    <option value="C2: Nativo">C2: Nativo</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Primaria: ¿Concluiste tu último grado de estudios?
+                </label>
+                <select class="formulario__input" name="Primaria: ¿Concluiste tu último grado de estudios?" id="nombre" required>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿En qué institución realizaste tu último grado de primaria?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿En qué institución realizaste tu último grado de primaria?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Secundaria: ¿Concluiste tu último grado de estudios?
+                </label>
+                <select class="formulario__input" name="Secundaria: ¿Concluiste tu último grado de estudios?" id="nombre" required>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿En qué institución realizaste tu último grado de secundaria?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿En qué institución realizaste tu último grado de secundaria?"
+                        id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Preparatoria (Bachillerato)¿Concluiste tu último grado de estudios?
+                </label>
+                <select class="formulario__input" name="Preparatoria (Bachillerato)¿Concluiste tu último grado de estudios?" id="nombre" required>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿En qué institución realizaste tu último grado de Preparatoria (Bachillerato)?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿En qué institución realizaste tu último grado de Preparatoria (Bachillerato)?"
+                        id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cuentas con certificado?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Cuentas con certificado?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Licenciatura: ¿Concluiste tu último grado de estudios?
+                </label>
+                <select class="formulario__input" name="Licenciatura: ¿Concluiste tu último grado de estudios?"
+                    id="nombre" required>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿En qué institución realizaste tu último grado de Licenciatura?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input"
+                        name="¿En qué institución realizaste tu último grado de Licenciatura?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cuentas con título y/o cédula?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input"
+                        name="¿Cuentas con título y/o cédula?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">Maestría: ¿Concluiste tu último grado de estudios?
+                </label>
+                <select class="formulario__input" name="Maestría: ¿Concluiste tu último grado de estudios?" id="nombre"
+                    required>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿En qué institución realizaste tu último grado de
+                    Maestría?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input"
+                        name="¿En qué institución realizaste tu último grado de Maestría?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cuentas con título y/o cédula?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Cuentas con título y/o cédula?" id="nombre">
+                </div>
+            </div>
+            <h1>Información profesional</h1>
+            <br>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Link de tu perfil LinkedIn</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Link de tu perfil LinkedIn" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Link de tu Currículo Vitae (CV)</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Link de tu Currículo Vitae (CV)" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cuál es tu CURP?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Cuál es tu CURP?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cuál es tu RFC?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Cuál es tu RFC?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cuál es tu expectativa salarial?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Cuál es tu expectativa salarial?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="select" class="formulario__label">¿Estarías dispuesto/a a cambiar de residencia?
+                </label>
+                <select class="formulario__input" name="¿Estarías dispuesto/a a cambiar de residencia?" id="nombre" required>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <h1>¿Qúe necesito de Generatión México?</h1>
+            <br>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Por qué decidi entrar a Generatión?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Por qué decidi entrar a Generatión?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Estoy haciendo un cambio de carrera? ¿Por qué?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Estoy haciendo un cambio de carrera? ¿Por qué?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Tengo experiencia en esta area? ¿Cúal?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Tengo experiencia en esta area? ¿Cúal?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿En que empresas de Soporte has laborado?(Poner ninguna en caso de no tener experiencia en esta area)</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿En que empresas de Soporte has laborado?(Poner ninguna en caso de no tener experiencia en esta area)" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Lista las técnologias con las que tienes experiencia (Lenguajes de programación, Softwares, Offimatica)</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="Lista las técnologias con las que tienes experiencia (Lenguajes de programación, Softwares, Offimatica)" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Donde te ves al terminar el Bootcamp?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input"
+                        name="¿Donde te ves al terminar el Bootcamp?"
+                        id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Qué esperas de tu proceso de empleabilidad?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Qué esperas de tu proceso de empleabilidad?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Qué habilidades crees que te haga falta desarrollar deacuerdo a lo visto hasta ahora durante el bootcamp?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="¿Qué habilidades crees que te haga falta desarrollar deacuerdo a lo visto hasta ahora durante el bootcamp?" id="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">¿Cómo fue tu reclutamiento, fue facíl?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input"
+                        name="¿Cómo fue tu reclutamiento, fue facíl?"
+                        id="nombre">
+                </div>
+            </div>
+            <br>
+            <div class="formulario__grupo ">
+                <p class="formulario__grupo-btn-enviar">
+                    <input type="submit" class="formulario__btn" name="Upload" value="Enviar" />
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
