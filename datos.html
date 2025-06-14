@@ -70,10 +70,300 @@
                             class="text-decoration-none text-primary">carlos.hinojosa@idr.edu.mx</a></p>
                     <p class="m-0"><strong>Amizaday</strong> - <a href="mailto:amizaday@example.com"
                             class="text-decoration-none text-primary">amizaday.hernandez@idr.edu.mx</a></p>
-                    <div class="mt-3 text-center text-md-start">
-                        <a href="https://us06web.zoom.us/j/81251572823" target="_blank"
+                    <!-- Botones y modales para cada tema con preguntas -->
+                    
+                    <div class="container my-5">
+                        <h5>Puedes usar las siguientes preguntas para ejecutar la entrevista</h5>
+                        <div class="row g-3">
+                            <!-- Casos prácticos y preguntas situacionales -->
+                            <!-- ... (todo el contenido anterior) ... -->
+                    
+                            <!-- Herramientas de diagnóstico y comandos -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#modalDiagnostico">
+                                    Herramientas de diagnóstico
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalDiagnostico" tabindex="-1" aria-labelledby="modalDiagnosticoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalDiagnosticoLabel">Herramientas de diagnóstico y comandos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Qué comando usas para verificar si un puerto está abierto en una PC con Windows?</li>
+                                                <li>¿Cómo utilizarías Nping para enviar una trama Ethernet con un mensaje personalizado?
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- ITSM / Herramientas -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalITSM">
+                                    ITSM / Herramientas
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalITSM" tabindex="-1" aria-labelledby="modalITSMLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalITSMLabel">ITSM / Herramientas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Has usado Jira, ServiceNow, Zendesk, etc.?</li>
+                                                <li>¿Qué es un SLA?</li>
+                                                <li>¿Diferencia entre incidente y solicitud de servicio?</li>
+                                                <li>¿Qué es una base de conocimientos?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Redes -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalRedes">
+                                    Redes
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalRedes" tabindex="-1" aria-labelledby="modalRedesLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalRedesLabel">Redes</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Qué comandos usarías para diagnosticar problemas de red?</li>
+                                                <li>¿Diferencia entre IP pública y privada?</li>
+                                                <li>¿Qué harías si un usuario no puede conectarse al Wi-Fi?</li>
+                                                <li>¿Qué es una VPN y para qué se usa?</li>
+                                                <li>¿Cómo solucionarías un conflicto de IP?</li>
+                                                <li>¿Qué es el modelo OSI y cuáles son sus 7 capas?</li>
+                                                <li>¿En qué se diferencia el modelo OSI del modelo TCP/IP?</li>
+                                                <li>¿En qué capa del modelo OSI trabajan los switches? ¿Y los routers?</li>
+                                                <li>¿Qué función cumple la capa de red en el modelo OSI?</li>
+                                                <li>¿Qué significa encapsulamiento en redes y por qué es importante?</li>
+                                                <li>¿Qué dispositivos trabajan en la capa de enlace de datos?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modalProtocolos">
+                                    Protocolos de red 
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalProtocolos" tabindex="-1" aria-labelledby="modalProtocolosLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalRedesLabel">Protocolos de red (DNS, DHCP, HTTP/HTTPS, FTP, SSH, SNMP)</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Qué es DNS y cómo funciona?</li>
+                                                <li>¿Cuál es la diferencia entre HTTP y HTTPS?</li>
+                                                <li>¿Qué función cumple el protocolo DHCP en una red?</li>
+                                                <li>¿Qué diferencias existen entre FTP y SFTP?</li>
+                                                <li>¿Para qué sirve el protocolo SSH y por qué es preferido sobre Telnet?</li>
+                                                <li>¿Qué información permite monitorear el protocolo SNMP?</li>
+                                                <li>¿En qué puerto trabajan los siguientes protocolos: HTTP, HTTPS, DNS, FTP, SSH?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Seguridad básica -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalSeguridad">
+                                    Seguridad básica
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalSeguridad" tabindex="-1" aria-labelledby="modalSeguridadLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalSeguridadLabel">Seguridad Básica</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Qué medidas básicas usas para asegurar una computadora?</li>
+                                                <li>¿Qué es el phishing?</li>
+                                                <li>¿Cómo verificas si un archivo es seguro?</li>
+                                                <li>¿Qué harías si una PC actúa de forma extraña?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- routers y switches -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#modalRou">
+                                    Routers y switches
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalRou" tabindex="-1" aria-labelledby="modalRouLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalRouLabel">Configuración y solución de problemas en routers y switches</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Qué pasos sigues para configurar una interfaz en un router Cisco?</li>
+                                                <li>¿Cuál es la diferencia entre una VLAN y una subred?</li>
+                                                <li>¿Qué significa configurar un default gateway en un switch o router?</li>
+                                                <li>¿Qué harías si dos dispositivos tienen la misma IP?</li>
+                                                <li>¿Cómo solucionarías un conflicto de VLANs?</li>
+                                                <li>¿Cómo accedes a la consola de un switch para configurarlo?</li>
+                                                <li>¿Qué herramientas usarías para verificar si un switch está funcionando correctamente?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Sistema Operativo -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#modalSO">
+                                    Sistema Operativo
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalSO" tabindex="-1" aria-labelledby="modalSOLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalSOLabel">Sistema Operativo</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Cómo reiniciarías un servicio desde la terminal en Linux?</li>
+                                                <li>¿Cómo arrancarías un sistema en modo seguro en Windows?</li>
+                                                <li>¿Qué pasos seguirías si un usuario no puede iniciar sesión?</li>
+                                                <li>¿Qué es el archivo hosts y para qué sirve?</li>
+                                                <li>¿Cómo verificarías si hay problemas de red desde la terminal?</li>
+                                                <li>Explica qué es la BIOS.</li>
+                                                <li>Explica la diferencia entre RAM y ROM.</li>
+                                                <li>Enumera algunos tipos de SO.</li>
+                                                <li>Describe los componentes de hardware más importantes de un computador.</li>
+                                                <li>¿Para qué sirven los controladores de dispositivos?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Soporte TI y niveles de atención -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalSoporteTI">
+                                    Soporte TI y niveles
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalSoporteTI" tabindex="-1" aria-labelledby="modalSoporteTILabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalSoporteTILabel">Soporte TI y niveles de atención</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Cuál es la diferencia entre soporte TI nivel 1, 2 y 3?</li>
+                                                <li>¿Qué habilidades consideras fundamentales para brindar soporte técnico en campo?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Soporte a Usuario -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-info w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalUsuario">
+                                    Soporte a usuario
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="modalUsuarioLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalUsuarioLabel">Soporte a Usuario</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Qué haces si un usuario dice que su PC va lenta?</li>
+                                                <li>¿Qué pasos sigues si una impresora no imprime?</li>
+                                                <li>¿Cómo restableces una contraseña olvidada?</li>
+                                                <li>¿Qué haces si un software no se abre tras una actualización?</li>
+                                                <li>¿Qué es un ticket de soporte y qué debe contener?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Troubleshooting en redes (ping, traceroute, nslookup, netstat) -->
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-info w-100" data-bs-toggle="modal" data-bs-target="#modalTro">
+                                    Troubleshooting en redes
+                                </button>
+                            </div>
+                            <div class="modal fade" id="modalTro" tabindex="-1" aria-labelledby="modalTroLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTroLabel">Troubleshooting en redes (ping, traceroute, nslookup, netstat)</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>¿Cómo usarías el comando ping para diagnosticar conectividad?</li>
+                                                <li>¿Qué información te proporciona traceroute (o tracert en Windows)?</li>
+                                                <li>¿Cuál es la utilidad del comando nslookup?</li>
+                                                <li>¿Qué diferencia hay entre netstat y ipconfig?</li>
+                                                <li>¿Qué harías si un ping a una IP responde pero un ping a un nombre de dominio no?</li>
+                                                <li>¿Qué significa si al usar traceroute hay asteriscos (*) en los saltos?</li>
+                                                <li>¿Cómo puedes saber qué puertos están abiertos en tu equipo?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
+                            <div class="mt-3 text-center text-md-start">
+                        <a href="https://us06web.zoom.us/j/81251572823?jst=2" target="_blank"
                             class="btn btn-outline-primary fw-bold">
                             <i class="bi bi-camera-video"></i> Entrar a la Sala Zoom
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1tfD9PbNVC4Cfj9DFntUh_ebO7KIDK1Uj?usp=sharing" target="_blank" class="btn btn-outline-primary fw-bold">
+                            <i class="bi bi-camera-video"></i> Carpeta de CVs
                         </a>
                     </div>
                 </div>
